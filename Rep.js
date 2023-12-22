@@ -208,7 +208,7 @@ function getMealIngredient(index){
     ingredient.append(createIngredient);
     ingredient.append(createIngredientList);
     ingredient.append(createYoutubeDiv);
-    ingredient.style.height=((length+2)*5)+'%';
+    ingredient.style.height=((length+4)*5)+'%';
     function widthFunction(index){
         ingredient.style.width=(length*index)+'%';
         console.log(length*index)
@@ -219,7 +219,7 @@ function getMealIngredient(index){
     });
     console.log()
     createYoutubeDiv.onclick= ()=>{
-        window.open(result[index].strYoutube)
+        window.open(result.strYoutube)
     }
     widthFunction(3);
     foodImg=document.getElementById("food-img");
