@@ -1,5 +1,4 @@
 // creating variables
-var temp='';
 const randomMealDiv=document.getElementById("Random_meal");
 const ingredient=document.getElementById("ingredient");
 const ingredientBody=document.getElementById("ingredient_body");
@@ -10,6 +9,7 @@ const bodyPara=document.getElementById("bodyPara");
 const categoryName=document.getElementById("categoryName");
 let result = '';
 let searchCategory='Seafood';
+var temp='';
 var foodImg='';
 var foodName='';
 var ingredientli='';
@@ -115,11 +115,6 @@ fetch("https://www.themealdb.com/api/json/v1/1/random.php")
 })
 
 // getRandomMeal function is used to add 
-
-
-window.open(result.strYoutube)
-
-
 searchButton.onclick=()=>{
    searchCategory=document.getElementById("search").value;
    fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c="+searchCategory)
@@ -140,9 +135,7 @@ function everymeal(item, index){
     console.log(item.strMeal);
     searchCategoryDiv.append(categorymeal);
 }
-
 }
-
 
 fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood")
         .then((response) => response.json())
@@ -160,12 +153,8 @@ function everymeal(item, index){
     categorymeal.innerHTML+='<img id="categoryMealImg" src="'+item.strMealThumb+'" alt="'+item.strMeal+'-img">'
     categorymeal.innerHTML+='<h1 id="categoryMealName">'+item.strMeal+'</h1>'
     console.log(item.strMeal);
-    searchCategoryDiv.append(categorymeal);
-    
+    searchCategoryDiv.append(categorymeal);  
 }
-
-
-
 
 function getMealIngredient(index){
     result=resultcategory[index]
