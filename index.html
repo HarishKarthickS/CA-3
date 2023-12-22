@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Meal Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- header which contains logo and name -->
+        <header>
+            <img src="./img/OIG.IH6_f6 1.png" alt="logo">
+            <h1 id="title">Random Meal Generator</h1>
+        </header>
+        <!-- This the body which contains the video and the search bar  -->
+        <div id="head"> 
+            <video autoplay muted loop id="myVideo">
+                <source src="./img/cooking_-_11323 (540p).mp4" type="video/mp4">
+            </video>
+            <p id="bodyPara">
+                Welcome to random Meal generator : <br>
+                In this amazing world of food ,<br>
+                there are lot of cuisines, different type of food, and<br>
+                we help you choose what meal to cook today.
+            </p>
+            <div id="search-div">
+                <h3>Search Meal category:</h3>
+                <input type="text" name="Search" id="search">
+                <button id="search-button" type="button" >
+                    <img src="./img/image 1.png" alt="seach-icon" id="search-icon" >
+                </button>
+            </div>
+        </div>
+        <div id="searchcategory-div">
+        </div>
+        <!-- This contains the Random Meal from the API -->   
+        <div id="Random_meal_div">
+            <h2>Today's Meal of choice:</h2>
+            <div id="Random_meal"> 
+            </div>
+            <div id="ingredient_body">
+                <div id="ingredient">
+                    <img src="./img/image 2.png" alt="exit-icon" id="exit-icon">
+                </div>
+            </div>
+        </div>
+        <script src="Rep.js"></script>
+    </body>
+</html>

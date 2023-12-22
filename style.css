@@ -1,0 +1,396 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+body{
+ overflow-x:hidden; 
+}
+/* body{
+    background: url('./img/wood-1.jpg');
+} */
+header{
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    background-color: #FFF;
+}
+header img{
+    height: 7%;
+    width: 8%;
+}
+#myVideo{
+    object-fit: cover;
+    width: 100%;
+    height: 42%;
+    position:absolute;
+    filter: brightness(48%);
+    /* border-bottom-left-radius: 84px;
+    border-bottom-right-radius: 84px; */
+} 
+p{
+    position: absolute;
+    top:10%;
+    left: 6%;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#youtube-div{
+    cursor: pointer;
+}
+#search{ 
+    position: absolute;
+    top:31%;
+    left: 25%;
+    height: 57px;
+    width: 57%;
+    border-radius: 30px;
+    font-size: 28px;
+    text-align: left;
+    border: none;
+}
+#search-icon{
+    position: absolute;
+    top:32%;
+    left: 78%;
+    width: 35px;
+    height: 35px;
+}
+#search-div h3{
+    color: #FFF;
+    font-family: Inter;
+    position: absolute;
+    top: 33%;
+    left: 6%;
+}
+#search-button{
+    cursor: pointer;
+}
+#Random_meal_div h2{
+    position: absolute;
+    top: 49%;
+    color: #000;
+    font-family: Inter;
+    font-size: 19px;
+    margin-left: 3%;
+}
+#searchcategory-div h2{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Inter;
+    margin: 15px;
+}
+#Random_meal{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    height:23%;
+    width: 66%;
+    border-radius: 60px;
+    background: linear-gradient(90deg, rgba(0, 194, 255, 0.84) 0.16%, rgba(0, 10, 255, 0.84) 100%);
+}
+#wood{
+    background: url('./img/wood-1.jpg');
+}
+#Random_meal #food-img{
+    margin-left: 7%;
+    margin-right: 3%;
+    height: 97%;
+    width: 37%;
+}
+#Random_meal #food-name{
+    margin-left: 7%;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#ingredient_body{
+    visibility: hidden;
+    position: absolute;
+    top:0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+#ingredient{
+    /* height: 84%; */
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+#exit-icon{
+    margin-top: 2.1%;
+    margin-left: 91%;
+    height: 3.5%;
+    width: 5%;
+    cursor: pointer;
+}
+#ingredient #food-img{
+    height: 31%;
+    width: 57%;
+    margin-left: 21%;
+}
+#ingredient #food-name{
+    text-align: center;
+    color: #000000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#ingredient_title{
+    margin-top: 2%;
+    margin-left: 7%;
+    display: flex;
+    align-items: flex-start;
+}
+#ingredient ul{
+    margin-left: 32%;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    font-size: 13px;
+    font-family: Inter;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 600;
+}
+#youtube-div{
+    margin-top: 3%;
+    margin-left: 17%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 6%;
+    width: 66%;
+    border-radius: 30px;
+    margin-bottom: 2%;
+    background: rgba(0, 255, 26, 0.75);
+} 
+#youtube-div img{
+    height: 96%;
+}
+#youtube-div h4{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#searchcategory-div{
+    position: absolute;
+    top: 84%;
+    display: grid;
+    width: 98%;
+    grid-template-columns: auto auto auto ;
+    gap: 12px;
+    background: url('./img/wood-1.jpg');
+    padding-top: 3%;
+    padding-left: 3%;
+}
+.categorymeal{
+    margin-top: 26px;
+    border-radius: 20px;
+    height: 90%;
+    width: 84%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding-bottom: 1%; */
+    color: rgb(0, 0, 0);
+}
+.categorymeal:hover{
+    background-color:rgb(0, 255, 21) ;
+    color: rgb(255, 255, 255);
+}
+#categoryMealImg{
+    height: 25vh;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#categoryMealName{
+    align-items: center;
+    font-size: 16px;
+    font-family: Inter;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 4%;
+}
+#categoryName{
+    position: absolute;
+    top: 78%;
+    left:32%;
+    height: 1%;
+    width: 100%;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    p{
+        font-size: 21px;
+    }
+    #title{
+        font-size: 21px;
+    }
+    header img{
+        height: 14%;
+        width: 14%;
+    }
+    #search{ 
+        position: absolute;
+        top:35%;
+        left: 6%;
+        height: 43px;
+        width: 84%;
+        border-radius: 30px;
+        font-size: 28px;
+        text-align: left;
+        border: none;
+    }
+    #search-div h3{
+        top: 30%;
+        left: 6%;
+    }
+    #search-icon{
+        position: absolute;
+        top:35.3%;
+        left: 78%;
+        width: 35px;
+        height: 35px;
+    }
+    #Random_meal_div h2{
+        position: absolute;
+        top: 47%;
+        color: #000;
+        font-family: Inter;
+        font-size: 19px;
+        margin-left: 3%;
+    }
+    #Random_meal{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 51%;
+        left: 8%;
+        height:12%;
+        width: 84%;
+        border-radius: 60px;
+        background: linear-gradient(90deg, rgba(0, 194, 255, 0.84) 0.16%, rgba(0, 10, 255, 0.84) 100%);
+    }
+    #Random_meal #food-img{
+        margin-left: 10%;
+        margin-right: 3%;
+        height: 95%;
+        width: 39%;
+    }
+    #ingredient_body{
+        visibility: hidden;
+        position: absolute;
+        top:0%;
+        height: 110%;
+        width: 110%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    #ingredient{
+        /* height: 84%; */
+        width: 60%;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+    }
+    #searchcategory-div{
+        position: absolute;
+        top: 66%;
+        display: grid;
+        width: 98%;
+        grid-template-columns: auto auto auto ;
+        gap: 12px;
+        background: url('./img/wood-1.jpg');
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+    #searchcategory-div h2{
+        position: absolute;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-family: Inter;
+        margin:4px ;
+        font-size: 21px;
+    }
+    .categorymeal{
+        margin-top: 31px;
+        border-radius: 20px;
+        height: 75%;
+        width: 84%;
+        margin-bottom: 3%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* padding-bottom: 1%; */
+        color: rgb(0, 0, 0);
+    }
+    #categoryMealImg{
+        height: 21vh;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    #youtube-div img{
+        height: 84%;
+    }
+    #youtube-div{
+        margin-top: 3%;
+        margin-left: 12%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        height: 6%;
+        width: 79%;
+        border-radius: 30px;
+        margin-bottom: 2%;
+        background: rgba(0, 255, 26, 0.75);
+    } 
+    #youtube-div h4{
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
